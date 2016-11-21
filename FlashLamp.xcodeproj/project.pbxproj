@@ -15,6 +15,7 @@
 		04958A251D62014100883A1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04958A231D62014100883A1F /* LaunchScreen.storyboard */; };
 		04958A301D62014100883A1F /* FlashLampTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04958A2F1D62014100883A1F /* FlashLampTests.m */; };
 		04958A3B1D62014100883A1F /* FlashLampUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04958A3A1D62014100883A1F /* FlashLampUITests.m */; };
+		04958A4A1D62017B00883A1F /* PopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04958A491D62017B00883A1F /* PopView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		04958A361D62014100883A1F /* FlashLampUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashLampUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04958A3A1D62014100883A1F /* FlashLampUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlashLampUITests.m; sourceTree = "<group>"; };
 		04958A3C1D62014100883A1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04958A481D62017B00883A1F /* PopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopView.h; sourceTree = "<group>"; };
+		04958A491D62017B00883A1F /* PopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				04958A191D62014100883A1F /* AppDelegate.m */,
 				04958A1B1D62014100883A1F /* ViewController.h */,
 				04958A1C1D62014100883A1F /* ViewController.m */,
+				04958A481D62017B00883A1F /* PopView.h */,
+				04958A491D62017B00883A1F /* PopView.m */,
 				04958A1E1D62014100883A1F /* Main.storyboard */,
 				04958A211D62014100883A1F /* Assets.xcassets */,
 				04958A231D62014100883A1F /* LaunchScreen.storyboard */,
@@ -207,6 +212,7 @@
 				TargetAttributes = {
 					04958A111D62014100883A1F = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = DPKFF7WW35;
 					};
 					04958A2A1D62014100883A1F = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -272,6 +278,7 @@
 			files = (
 				04958A1D1D62014100883A1F /* ViewController.m in Sources */,
 				04958A1A1D62014100883A1F /* AppDelegate.m in Sources */,
+				04958A4A1D62017B00883A1F /* PopView.m in Sources */,
 				04958A171D62014100883A1F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,10 +420,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FlashLamp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wangbinbin.FlashLamp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangbinbin.FlashLamp1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -424,10 +434,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FlashLamp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wangbinbin.FlashLamp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangbinbin.FlashLamp1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
